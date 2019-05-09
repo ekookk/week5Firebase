@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <title> Piggy </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- place the custom tag anywhere inside the body -->
+  <Peppa></Peppa>
+  <br></br>
+  <comment></comment>
+  <br></br>
+  <parent-child></parent-child>
+  <meme1></meme1>
+  <meme2></meme2>
+
+  <!-- include the tag -->
+  <script type="riot/tag" src="./tags/peppa.tag"></script>
+  <script src="./tags/parent-child.tag" type="riot/tag"></script>
+  <script src="./tags/child.tag" type="riot/tag"></script>
+  <script src="./tags/meme1.tag" type="riot/tag"></script>
+  <script src="./tags/meme2.tag" type="riot/tag"></script>
+
+  <!-- include riot.js -->
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.8/riot+compiler.min.js"></script>
+  <!-- mount the tag -->
+  <script>
+    riot.mount('*')
+  </script>
+
+  <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAYQ2TW3gcoATDF2NmgE0FuSbeb38yxYL0",
+   authDomain: "week5-9c8cf.firebaseapp.com",
+   databaseURL: "https://week5-9c8cf.firebaseio.com",
+   projectId: "week5-9c8cf",
+   storageBucket: "week5-9c8cf.appspot.com",
+   messagingSenderId: "52261328581",
+   appId: "1:52261328581:web:a6e7c742db37186c"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+  <style>
+    body {
+      text-align: center;
+      padding: 10em;
+    }
+  </style>
+</body>
+
+</html>
